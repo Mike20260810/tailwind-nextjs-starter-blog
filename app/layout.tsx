@@ -11,7 +11,6 @@ import Footer from '@/components/Footer'
 import siteMetadata from '@/data/siteMetadata'
 import { ThemeProviders } from './theme-providers'
 import { Metadata } from 'next'
-import Script from 'next/script' // <- Script 추가
 
 const space_grotesk = Space_Grotesk({
   subsets: ['latin'],
@@ -69,13 +68,12 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       suppressHydrationWarning
     >
       <head>
-        {/* 구글 애드센스 인증/광고 스크립트 */}
-        <Script
+        {/* 구글 애드센스 스크립트 (크롤러 직접 인식용 순수 HTML 태그) */}
+        <script
           async
           src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1493616573815607"
           crossOrigin="anonymous"
-          strategy="afterInteractive"
-        />
+        ></script>
       </head>
       <link
         rel="apple-touch-icon"
