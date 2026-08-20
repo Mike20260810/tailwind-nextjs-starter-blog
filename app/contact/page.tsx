@@ -16,7 +16,7 @@ export default function ContactPage() {
           If you have any questions, feedback, or business inquiries, feel free to reach out to us!
         </p>
         <ul>
-          <li><strong>Email:</strong> (선택사항: 본인 이메일 주소)</li>
+          <li><strong>Email:</strong> (hjlee2020@gmail.com)</li>
           <li><strong>Website:</strong> https://www.hobiknows.com/</li>
         </ul>
       </div>
