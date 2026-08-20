@@ -19,23 +19,33 @@ export default function Footer() {
           <SocialIcon kind="threads" href={siteMetadata.threads} size={6} />
           <SocialIcon kind="medium" href={siteMetadata.medium} size={6} />
         </div>
+
+        {/* AdSense Essential Policy Links */}
+        <div className="mb-2 flex space-x-3 text-sm text-gray-500 dark:text-gray-400">
+          <Link href="/blog/privacy-policy" className="hover:underline">
+            Privacy Policy
+          </Link>
+          <div>{`•`}</div>
+          <Link href="/blog/terms" className="hover:underline">
+            Terms of Service
+          </Link>
+          <div>{`•`}</div>
+          <Link href="/about" className="hover:underline">
+            About Us
+          </Link>
+          <div>{`•`}</div>
+          <Link href="/blog/contact" className="hover:underline">
+            Contact
+          </Link>
+        </div>
+
+        {/* Copyright & Author Info */}
         <div className="mb-2 flex space-x-2 text-sm text-gray-500 dark:text-gray-400">
           <div>{siteMetadata.author}</div>
           <div>{` • `}</div>
           <div>{`© ${new Date().getFullYear()}`}</div>
           <div>{` • `}</div>
           <Link href="/">{siteMetadata.title}</Link>
-        </div>
-
-        {/* Privacy Policy 및 Contact 링크 */}
-        <div className="mb-2 flex space-x-3 text-sm text-gray-500 dark:text-gray-400">
-          <Link href="/privacy" className="hover:underline">
-            Privacy Policy
-          </Link>
-          <div>{`•`}</div>
-          <Link href="/contact" className="hover:underline">
-            Contact
-          </Link>
         </div>
 
         <div className="mb-8 text-sm text-gray-500 dark:text-gray-400">
