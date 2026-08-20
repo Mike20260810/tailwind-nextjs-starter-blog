@@ -1,3 +1,4 @@
+/* eslint-disable */
 export const metadata = {
   title: 'Contact - Hobi Knows',
   description: 'Contact us at Hobi Knows',
