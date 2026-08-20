@@ -26,8 +26,8 @@ export default function Footer() {
           <div>{` • `}</div>
           <Link href="/">{siteMetadata.title}</Link>
         </div>
-        
-        {/* Privacy Policy 및 Contact 링크 추가 영역 */}
+
+        {/* Privacy Policy 및 Contact 링크 */}
         <div className="mb-2 flex space-x-3 text-sm text-gray-500 dark:text-gray-400">
           <Link href="/privacy" className="hover:underline">
             Privacy Policy
