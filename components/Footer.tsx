@@ -26,6 +26,18 @@ export default function Footer() {
           <div>{` • `}</div>
           <Link href="/">{siteMetadata.title}</Link>
         </div>
+        
+        {/* Privacy Policy 및 Contact 링크 추가 영역 */}
+        <div className="mb-2 flex space-x-3 text-sm text-gray-500 dark:text-gray-400">
+          <Link href="/privacy" className="hover:underline">
+            Privacy Policy
+          </Link>
+          <div>{`•`}</div>
+          <Link href="/contact" className="hover:underline">
+            Contact
+          </Link>
+        </div>
+
         <div className="mb-8 text-sm text-gray-500 dark:text-gray-400">
           <Link href="https://github.com/timlrx/tailwind-nextjs-starter-blog">
             Tailwind Nextjs Theme
